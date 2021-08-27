@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .buttons {
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color:Highlight;
+        }
+        :disabled{
+            color:gray;
+            background-color:lightgray;
+        }
+        #prodinfo{
+            background-color:red;
+        }
+    </style>
+    <script>
+        function clickalert() {
+            alert("Hello");
+        }
+        function chkboxonchange(value) {
+            if (value == "laminating") {
+                var btnlaminating = document.getElementById("laminating");
+                btnlaminating.disabled = "enable";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" id="prodinfo" class="buttons" value="제품정보" onclick="clickalert()" disabled="disabled" />
+    <input type="button" id="process" class="buttons" value="공정" />
+    <input type="button" id="printing" class="buttons" value="인쇄" disabled="disabled" />
+    <input type="button" id="gcylinder" class="buttons" value="동판" disabled="disabled" />
+    <input type="button" id="laminating" class="buttons" value="합지" disabled="disabled" />
+    <input type="button" id="hardening" class="buttons" value="경화" disabled="disabled" />
+    <input type="button" id="slitting" class="buttons" value="슬리팅" disabled="disabled" />
+    <input type="button" id="finishing" class="buttons" value="가공" disabled="disabled" />
+    <br /><br />
+    <label><input type="checkbox" class="chkboxes" value="printing" onchange="chkboxonchange(value)" />인쇄</label><br />
+    <label><input type="checkbox" class="chkboxes" value="printing" />합지</label><br />
+    <label><input type="checkbox" class="chkboxes" value="printing" />경화</label><br />
+    <label><input type="checkbox" class="chkboxes" value="printing" />슬리팅</label><br />
+    <label><input type="checkbox" class="chkboxes" value="printing" />가공</label><br />
+</body>
+</html>
