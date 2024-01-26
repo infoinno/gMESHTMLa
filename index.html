@@ -28,27 +28,46 @@
                 background: #6fc0d1;
             }
         }
+
+        #wrap{
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+
+        .container{
+            width: 93.75%;
+            height: 492px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
     </style>
 </head>
 
 <body>
-    <div style="position:absolute; left: 20px; top:20px;">
-        <button type="button" class="btn btn-primary" value="printing"
-            onClick="location.href='/_Pages/_Product1.html'">인쇄</button>
-        <button type="button" class="btn btn-secondary" value="slitting"
-            onClick="location.href='test01.html'">슬리팅</button>
-        <button type="button" class="btn btn-warning" value="finishing"
-            onClick="location.href='/_Pages/_Finishing.html'">가공</button>
-    </div>
-    <div style="position:absolute; left: 20px; top:60px;" hidden="hidden">
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-
-        <button type="button" class="btn btn-link">Link</button>
+    <div id="wrap">
+        <div class="container">
+            <div style="position:absolute; left: 20px; top:20px;">
+                <button type="button" class="btn btn-primary" value="printing"
+                    onClick="location.href='/_Pages/_Product1.html'">인쇄</button>
+                <button type="button" class="btn btn-secondary" value="slitting"
+                    onClick="location.href='test01.html'">슬리팅</button>
+                <button type="button" class="btn btn-warning" value="finishing"
+                    onClick="location.href='/_Pages/_Finishing.html'">가공</button>
+            </div>
+            <div style="position:absolute; left: 20px; top:60px;">
+                <!-- <div style="position:absolute; left: 20px; top:60px;" hidden="hidden"> -->
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+        
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </div>
     </div>
 
 </body>
