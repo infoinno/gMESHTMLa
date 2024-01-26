@@ -1,17 +1,44 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <style>
+        @media all and (min-width:320px) {
+            body {
+                background: #e65d5d;
+            }
+        }
+
+        @media all and (min-width:768px) {
+            body {
+                background: #2dcc70;
+            }
+        }
+
+        @media all and (min-width:960px) {
+            body {
+                background: #6fc0d1;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div style="position:absolute; left: 20px; top:20px;">
-        <button type="button" class="btn btn-primary" value="printing" onClick="location.href='/_Pages/_Product1.html'">인쇄</button>
-        <button type="button" class="btn btn-secondary" value="slitting" onClick="location.href='test01.html'">슬리팅</button>
-        <button type="button" class="btn btn-warning" value="finishing" onClick="location.href='/_Pages/_Finishing.html'">가공</button>
+        <button type="button" class="btn btn-primary" value="printing"
+            onClick="location.href='/_Pages/_Product1.html'">인쇄</button>
+        <button type="button" class="btn btn-secondary" value="slitting"
+            onClick="location.href='test01.html'">슬리팅</button>
+        <button type="button" class="btn btn-warning" value="finishing"
+            onClick="location.href='/_Pages/_Finishing.html'">가공</button>
     </div>
     <div style="position:absolute; left: 20px; top:60px;" hidden="hidden">
         <button type="button" class="btn btn-success">Success</button>
@@ -25,4 +52,5 @@
     </div>
 
 </body>
+
 </html>
